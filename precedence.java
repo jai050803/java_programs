@@ -4,5 +4,4 @@ public class precedence {
         System.out.println( i + j * k - k % n );
         System.out.println( i / n );
     }
-    
 }
