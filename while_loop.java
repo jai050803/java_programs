@@ -6,6 +6,10 @@ public class while_loop {
             --n;
         }
         System.out.println( n );
+        while (n < 4){
+            System.out.println( ++n );
+        }
+        System.out.println( n );
         
     }
 }
