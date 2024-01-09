@@ -1,6 +1,7 @@
 public class unknown_program {
     public static void main(String[] args)  {              
-        int n = 4;            
+        int n = 4;    
+        int k = 2;        
             
         System.out.println(++n );
         System.out.println( n );
@@ -13,5 +14,12 @@ public class unknown_program {
 
         System.out.println( --n );
         System.out.println( n );
+
+        System.out.println( n + k );
+        System.out.println(n);
+        System.out.println(k);
+        System.out.println("" + n + " " + k);
+
+        
     }       
 }
