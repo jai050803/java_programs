@@ -11,5 +11,8 @@ public class while_loop {
         }
         System.out.println( n );
         
+        while (n > 0){
+            System.out.println( ( n/=2 ) );
+        }
     }
 }
