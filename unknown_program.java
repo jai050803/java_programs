@@ -3,6 +3,8 @@ public class unknown_program {
         int n = 4;            
             
         System.out.println(++n );
-        System.out.println(n);         
+        System.out.println( n );
+        
+        System.out.println( n++ );
     }       
 }
