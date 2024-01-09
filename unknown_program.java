@@ -7,6 +7,7 @@ public class unknown_program {
         System.out.println( n );
         
         System.out.println( n++ );
+        System.out.println(n+k);
         System.out.println( n );
 
         System.out.println( -n );
@@ -20,6 +21,9 @@ public class unknown_program {
         System.out.println(k);
         System.out.println("" + n + " " + k);
 
-        
+        System.out.println("\n");
+        System.out.println(" " + n );
+        System.out.println(n * n);
+        System.out.println('n' );
     }       
 }
