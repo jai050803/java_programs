@@ -1,26 +1,45 @@
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
-
 public class even_number_reverse {
-    public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
-        System.out.println("enter numbers separate by space");
-        String input = scan.nextLine();
-        String[] numStrings = input.split("\\s+");
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int[] num = new int[numStrings.length];
+        // Prompt the user to enter numbers separated by space
+        System.out.print("Enter numbers separated by space: ");
+        String input = scanner.nextLine();
 
-        int[] ls = null;
+        // Split the input string into an array of strings using spaces as the delimiter
+        String[] numberStrings = input.split("\\s+");
 
-        for (int n : num){
-            if (n % 2 == 0){
-                ls= new int[n];
+        // Create a list to store even numbers
+        List<Integer> evenNumbersList = new ArrayList<>();
+
+        // Convert and add even numbers to the list
+        for (String str : numberStrings) {
+            try {
+                int num = Integer.parseInt(str);
+                if (num % 2 == 0) {
+                    evenNumbersList.add(num);
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter valid integers separated by spaces.");
+                return;
             }
         }
 
-        System.out.println(Arrays.toString(ls));
+        // Check if any even numbers were found
+        if (evenNumbersList.isEmpty()) {
+            System.out.println("No even numbers found in the input.");
+        } else {
+            // Sort the list in ascending order
+            Collections.sort(evenNumbersList);
 
-        scan.close();
+            // Print the sorted list
+            System.out.println("Even numbers in ascending order: " + evenNumbersList);
+        }
+        scanner.close();
     }
 }
