@@ -11,7 +11,15 @@ public class even_number_reverse {
 
         int[] num = new int[numStrings.length];
 
-        System.out.println(Arrays.toString(num));
+        int[] ls = null;
+
+        for (int n : num){
+            if (n % 2 == 0){
+                ls= new int[n];
+            }
+        }
+
+        System.out.println(Arrays.toString(ls));
 
         scan.close();
     }
