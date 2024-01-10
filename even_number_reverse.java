@@ -41,6 +41,10 @@ public class even_number_reverse {
 
             // Print the sorted list
             System.out.println("Even numbers in ascending order: " + evenNumbersList);
+
+            Collections.reverse(evenNumbersList);
+            System.out.println("Even numbers in reverse descending order: " + evenNumbersList);
+
         }
         
     }
