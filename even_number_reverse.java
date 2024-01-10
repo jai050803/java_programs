@@ -17,6 +17,8 @@ public class even_number_reverse {
         // Create a list to store even numbers
         List<Integer> evenNumbersList = new ArrayList<>();
 
+        scanner.close();
+
         // Convert and add even numbers to the list
         for (String str : numberStrings) {
             try {
@@ -40,6 +42,6 @@ public class even_number_reverse {
             // Print the sorted list
             System.out.println("Even numbers in ascending order: " + evenNumbersList);
         }
-        scanner.close();
+        
     }
 }
