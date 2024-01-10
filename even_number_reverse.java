@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.Scanner;
+
 
 public class even_number_reverse {
     public static void main(String[] args){
@@ -9,7 +11,7 @@ public class even_number_reverse {
 
         int[] num = new int[numStrings.length];
 
-        System.out.println(num);
+        System.out.println(Arrays.toString(num));
 
         scan.close();
     }
