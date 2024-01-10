@@ -5,11 +5,12 @@ public class even_number_reverse {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter numbers separate by space");
         String input = scan.nextLine();
-        Scanner inputScanner = new Scanner(input);
-        inputScanner.useDelimiter("[,\\s]+");
+        String[] numStrings = input.split("\\s+");
 
+        int[] num = new int[numStrings.length];
+
+        System.out.println(num);
 
         scan.close();
-        inputScanner.close();
     }
 }
