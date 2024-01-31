@@ -11,6 +11,8 @@ public class palindrome {
         } else {
             System.out.println("'" + str1 + "' is not a palindrome.");
         }
+        scanner.close();
+    }
 
         public static boolean isPalindrome(String str) {
             str = str.replaceAll("\\s", ""); // Remove spaces
