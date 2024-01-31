@@ -11,5 +11,22 @@ public class palindrome {
         } else {
             System.out.println("'" + str1 + "' is not a palindrome.");
         }
+
+        public static boolean isPalindrome(String str) {
+            str = str.replaceAll("\\s", ""); // Remove spaces
+            str = str.toLowerCase(); // Convert to lowercase
+    
+            int left = 0;
+            int right = str.length() - 1;
+    
+            while (left < right) {
+                if (str.charAt(left) != str.charAt(right)) {
+                    return false;
+                }
+                left++;
+                right--;
+            }
+    
+            return true;
     }
 }
