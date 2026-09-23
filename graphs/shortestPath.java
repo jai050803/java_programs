@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-public class ShortestPath {
+class ShortestPath {
     public static int shortestPath(Map<Integer, List<Integer>> graph, int src, int dst) {
         if (src == dst) return 0;
         if (!graph.containsKey(src)) return -1;
